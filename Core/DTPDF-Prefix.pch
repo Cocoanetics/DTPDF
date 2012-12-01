@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'DTPDF' target in the 'DTPDF' project
+//
+
+#import <TargetConditionals.h>
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+
+#if TARGET_OS_IPHONE
+	#import <UIKit/UIKit.h>
+#else
+	#import "NSValue+DTConversion.h"
+#endif
+
+#endif
