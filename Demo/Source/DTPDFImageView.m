@@ -53,7 +53,7 @@
     CGSize pageSize = [_PDFPage cropRect].size;
     
     // Drawing code
-    UIGraphicsBeginImageContextWithOptions(pageSize, NO, 1);
+    UIGraphicsBeginImageContextWithOptions(pageSize, NO, 0);
     CGContextRef contextRef = UIGraphicsGetCurrentContext();
     
     [_PDFPage renderInContext:contextRef];
